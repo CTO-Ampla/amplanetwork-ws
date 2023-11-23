@@ -1,0 +1,21 @@
+{
+  "name": "ampla-network",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/system": "^5.14.16",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "ahooks": "^3.7.8",
+    "antd": "^5.10.3",
+    "esbuild": "^0.19.5",
+    "http-server": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-font-loader": "^1.1.0",
+    "typescript": "^5.2.2"
+  }
+}

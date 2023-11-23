@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and drop example</title>
+  <style>
+    #dropzone {
+      width: 100px;
+      height: 100px;
+      border: 2px dashed black;
+    }
+
+    #dropzone.drop-hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="dropzone"></div>
+  <img id="drag-image" src="https://via.placeholder.com/100" draggable="true">
+
+  <script>
+    const dropzone = document.getElementById('dropzone');
+    const dragImage = document.getElementById('drag-image');
+
+    dropzone.addEventListener('dragover', (event) => {
+      event.preventDefault();
+      dropzone.classList.add('drop-hover');
+    });
+
+    dropzone.addEventListener('dragleave', (event) => {
+      event.preventDefault();
+      dropzone.classList.remove('drop-hover');
+    });
+
+    dropzone.addEventListener('drop', (event) => {
+      event.preventDefault();
+      dropzone.style.backgroundImage = `url(${dragImage.src})`;
+      dropzone.classList.remove('drop-hover');
+    });
+  </script>
+</body>
+</html>
