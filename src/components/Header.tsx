@@ -1,7 +1,9 @@
-import { Button, Flex } from "antd/lib";
+import Button  from "antd/lib/button";
 import * as React from "react";
-import { useResponsive } from "ahooks";
-import { Col, Row } from 'antd/lib';
+import { useResponsive } from "ahooks/es/useResponsive";
+import Col from 'antd/lib/col';
+import Flex from 'antd/lib/flex';
+import Row from 'antd/lib/row';
 
 type THeaderPropsType = {
 };

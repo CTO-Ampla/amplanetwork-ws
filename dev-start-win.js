@@ -31,4 +31,4 @@ function startChildProcess(name, color, command, ...args) {
 
 startChildProcess("Bundler", "green", "cmd", "/k", "yarn", "node", "build-dev.js");
 startChildProcess("Compiler", "blue", "cmd", "/k", "yarn", "tsc", "-w");
-startChildProcess("Http Server", "magenta", "cmd", "/k", "yarn", "http-server", "./dist");
+startChildProcess("Http Server", "magenta", "cmd", "/k", "yarn", "http-server", "./docs");

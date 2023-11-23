@@ -8,7 +8,7 @@ const config_provider_1 = __importDefault(require("antd/lib/config-provider"));
 const react_1 = __importDefault(require("react"));
 const client_1 = require("react-dom/client");
 const react_google_font_loader_1 = __importDefault(require("react-google-font-loader"));
-const ahooks_1 = require("ahooks");
+const useResponsive_1 = require("ahooks/es/useResponsive");
 const Header_1 = require("./components/Header");
 const Intro_1 = require("./components/Intro");
 const Who_1 = require("./components/Who");
@@ -17,7 +17,7 @@ const Footer_1 = require("./components/Footer");
 const Coverage_1 = require("./components/Coverage");
 const Div = (0, styled_1.default)('div') ``;
 const App = () => {
-    const responsive = (0, ahooks_1.useResponsive)();
+    const responsive = (0, useResponsive_1.useResponsive)();
     return (react_1.default.createElement(config_provider_1.default, { theme: {
             token: {
                 colorPrimary: "#b749bf",

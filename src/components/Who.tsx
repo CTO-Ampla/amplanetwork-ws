@@ -1,7 +1,9 @@
 import * as React from "react";
-import { useResponsive } from "ahooks";
-import { Col, Flex, Row } from 'antd/lib';
-import { styled } from "@mui/system";
+import { useResponsive } from "ahooks/es/useResponsive";
+import Col from 'antd/lib/col';
+import Flex from 'antd/lib/flex';
+import Row from 'antd/lib/row';
+import styled from "@mui/system/styled";
 
 type TWhoPropsType = {
 };
@@ -29,7 +31,7 @@ export const Who = (props: TWhoPropsType) => {
   const [price, setPrice] = React.useState("250 USD");
 
 
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(function(position) {
         const lat = position.coords.latitude;
@@ -53,7 +55,7 @@ export const Who = (props: TWhoPropsType) => {
         }
       });
     }
-  }, []);
+  }, []);*/
 
   //document.title = `${rs.xs ? "XS " : ""}${rs.sm ? "SM " : ""}${rs.md ? "MD " : ""}${rs.lg ? "LG " : ""}${rs.xl ? "XL" : ""}`
 
@@ -67,7 +69,6 @@ export const Who = (props: TWhoPropsType) => {
     >
       <p className="second" style={{fontSize: rs.md ? 25 : 20, padding: rs.md ? 0 : 15, textAlign: rs.md ? "center" : "center"}}>
         We fully operate online and we are always available for you.<br /><br />
-        We apply fix daily rate of <Span sx={{color: "#b749bf", fontWeight: "bolder"}}>{price}</Span> per day per resource.<br /><br />
         <Span sx={{fontStyle: "italic"}}>Dubai outsourcing with a French style.</Span>
       </p>
     </Div>

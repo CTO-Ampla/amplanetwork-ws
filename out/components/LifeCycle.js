@@ -22,12 +22,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Lifecycle = void 0;
 const React = __importStar(require("react"));
-const ahooks_1 = require("ahooks");
-const lib_1 = require("antd/lib");
-const system_1 = require("@mui/system");
+const useResponsive_1 = require("ahooks/es/useResponsive");
+const col_1 = __importDefault(require("antd/lib/col"));
+const flex_1 = __importDefault(require("antd/lib/flex"));
+const row_1 = __importDefault(require("antd/lib/row"));
+const styled_1 = __importDefault(require("@mui/system/styled"));
 const LifecycleItem_1 = require("./LifecycleItem");
 const style = {
     width: "1200px",
@@ -35,10 +40,10 @@ const style = {
     justifyContent: "space-between",
     alignItems: "center",
 };
-const Div = (0, system_1.styled)('div') ``;
-const Span = (0, system_1.styled)('span') ``;
+const Div = (0, styled_1.default)('div') ``;
+const Span = (0, styled_1.default)('span') ``;
 const Lifecycle = (props) => {
-    const rs = (0, ahooks_1.useResponsive)();
+    const rs = (0, useResponsive_1.useResponsive)();
     //document.title = `${rs.xs ? "XS " : ""}${rs.sm ? "SM " : ""}${rs.md ? "MD " : ""}${rs.lg ? "LG " : ""}${rs.xl ? "XL" : ""}`
     return React.createElement(React.Fragment, null,
         React.createElement(Div, { sx: {
@@ -51,17 +56,17 @@ const Lifecycle = (props) => {
                 paddingBottom: "20px",
                 backgroundColor: "#f5f5f5"
             } },
-            React.createElement(lib_1.Row, { align: "middle", style: {
+            React.createElement(row_1.default, { align: "middle", style: {
                     width: "100%",
                     maxWidth: "1200px",
                     paddingTop: "20px",
                     paddingBottom: "20px",
                 } },
-                React.createElement(lib_1.Col, { xs: 24 },
-                    React.createElement(lib_1.Flex, { vertical: true, align: "center", justify: rs.md ? "center" : "center", style: { marginBottom: rs.md ? 0 : 20 } },
+                React.createElement(col_1.default, { xs: 24 },
+                    React.createElement(flex_1.default, { vertical: true, align: "center", justify: rs.md ? "center" : "center", style: { marginBottom: rs.md ? 0 : 20 } },
                         React.createElement("h1", { className: "main", style: { margin: 0, fontSize: rs.md ? 30 : 30 } }, "Lifecycle"),
                         React.createElement("p", { className: "second", style: { margin: 0, fontSize: rs.md ? 25 : 20, padding: rs.md ? 0 : 15, textAlign: rs.md ? "center" : "center" } }, "Our process is simple and efficient")))),
-            React.createElement(lib_1.Row, { className: "second" },
+            React.createElement(row_1.default, { className: "second" },
                 React.createElement(LifecycleItem_1.LifeCycleItem, { icon: "task", bullets: ["Your project is converted in tasks", "Tasks are dispatched in 2 weeks milestones"], isLeftPic: true }),
                 React.createElement(LifecycleItem_1.LifeCycleItem, { icon: "screen", bullets: ["Developpers do one task", "Then take another one till the end"], isLeftPic: false }),
                 React.createElement(LifecycleItem_1.LifeCycleItem, { icon: "qa", bullets: ["When the tasks are done", "A QA will test each of them"], isLeftPic: true }),

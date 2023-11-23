@@ -4,9 +4,9 @@ const esbuild = require('esbuild');
     entryPoints: ['./out/App.js'],
     bundle: true,
     minify: true,
-    outfile: './dist/js/App.js',
+    outfile: './docs/js/App.js',
     format: "esm",
-    //outdir: './dist/js/',
+    treeShaking: true,
     logLevel: "info",
   });
 

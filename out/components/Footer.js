@@ -22,21 +22,26 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Footer = void 0;
 const React = __importStar(require("react"));
-const ahooks_1 = require("ahooks");
-const lib_1 = require("antd/lib");
-const system_1 = require("@mui/system");
+const useResponsive_1 = require("ahooks/es/useResponsive");
+const col_1 = __importDefault(require("antd/lib/col"));
+const flex_1 = __importDefault(require("antd/lib/flex"));
+const row_1 = __importDefault(require("antd/lib/row"));
+const styled_1 = __importDefault(require("@mui/system/styled"));
 const style = {
     width: "1200px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
 };
-const Div = (0, system_1.styled)('div') ``;
+const Div = (0, styled_1.default)('div') ``;
 const Footer = (props) => {
-    const rs = (0, ahooks_1.useResponsive)();
+    const rs = (0, useResponsive_1.useResponsive)();
     const [email, setEmail] = React.useState("CLick here to show the email");
     function displayEmail() {
         setEmail("info@amplanetwork.com");
@@ -48,14 +53,14 @@ const Footer = (props) => {
                 display: "flex",
                 justifyContent: "center",
             } },
-            React.createElement(lib_1.Row, { align: "middle", style: {
+            React.createElement(row_1.default, { align: "middle", style: {
                     width: "100%",
                     maxWidth: "1200px",
                     paddingTop: "20px",
                     paddingBottom: "20px",
                 } },
-                React.createElement(lib_1.Col, { xs: 24, md: 8 },
-                    React.createElement(lib_1.Flex, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
+                React.createElement(col_1.default, { xs: 24, md: 8 },
+                    React.createElement(flex_1.default, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
                         React.createElement("img", { src: "assets/logot2.png", alt: "Digicon", className: "img-fluid", style: { minHeight: "100px", maxHeight: "100px" } }),
                         React.createElement("p", null,
                             "Ampla Network is a 100% online IT",
@@ -64,8 +69,8 @@ const Footer = (props) => {
                             React.createElement("br", null),
                             "building processes.")),
                     !rs.md && React.createElement("hr", { style: { border: "none", borderBottom: "1px solid #fff" } })),
-                React.createElement(lib_1.Col, { xs: 24, md: 8 },
-                    React.createElement(lib_1.Flex, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
+                React.createElement(col_1.default, { xs: 24, md: 8 },
+                    React.createElement(flex_1.default, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
                         React.createElement("h3", null, "Location"),
                         React.createElement("p", null,
                             "Compass Building,",
@@ -79,8 +84,8 @@ const Footer = (props) => {
                             React.createElement("br", null),
                             "United Arab Emirates")),
                     !rs.md && React.createElement("hr", { style: { border: "none", borderBottom: "1px solid #fff" } })),
-                React.createElement(lib_1.Col, { xs: 24, md: 8 },
-                    React.createElement(lib_1.Flex, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
+                React.createElement(col_1.default, { xs: 24, md: 8 },
+                    React.createElement(flex_1.default, { vertical: true, style: { color: "#fff", textAlign: rs.md ? "left" : "center" }, align: rs.md ? "flex-start" : "center" },
                         React.createElement("h3", { id: "nc" }, "Contact us"),
                         React.createElement("p", null,
                             React.createElement("span", null, "Email :  "),

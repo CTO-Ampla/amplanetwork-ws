@@ -1,7 +1,9 @@
 import * as React from "react";
-import { useResponsive } from "ahooks";
-import { Col, Flex, Row } from 'antd/lib';
-import { styled } from "@mui/system";
+import { useResponsive } from "ahooks/es/useResponsive";
+import Col from 'antd/lib/col';
+import Flex from 'antd/lib/flex';
+import Row from 'antd/lib/row';
+import styled from "@mui/system/styled";
 
 type TFooterPropsType = {
 };
