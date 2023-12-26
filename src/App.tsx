@@ -66,7 +66,7 @@ const App = () => {
         items={[
           {icon: "code" , bullets: ["Low code platform", "Our low code plateform handle full project lifecycle"]    , isLeftPic: true},
           {icon: "ai"   , bullets: ["AI assisted components", "From AI Assistant","to AI Assisted software"]         , isLeftPic: !true},
-          {icon: "game" , bullets: ["Gamification", "Add promotional mini games","to make your marketing astonish"] , isLeftPic: true},
+          {icon: "game" , bullets: ["Gamification", "Add promotional mini games","to make your marketing astonishing."] , isLeftPic: true},
         ]}
       />
       <PicItem
@@ -109,7 +109,7 @@ const App = () => {
           <BlockItem
             isWhiteBG={true}
             title="Gamification"
-            description="Add promotional mini games to make your marketing astonish"
+            description="Add promotional mini-games to make your marketing astonishing."
             items={[
               {icon: "promo" , bullets: ["Promotional"]    , isLeftPic: true},
               {icon: "adv"   , bullets: ["Advertising"]         , isLeftPic: !true},
