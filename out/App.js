@@ -53,7 +53,7 @@ const App = () => {
             react_1.default.createElement(Who_1.Who, null),
             react_1.default.createElement(BlockItem_1.BlockItem, { title: "Scope of expertise", description: "Our expertise is splitted into 3 main areas", items: [
                     { icon: "code", bullets: ["Low code platform", "Our low code plateform handle full project lifecycle"], isLeftPic: true },
-                    { icon: "ai", bullets: ["AI assisted components", "From AI Asistant", "to AI Assisted software"], isLeftPic: !true },
+                    { icon: "ai", bullets: ["AI assisted components", "From AI Assistant", "to AI Assisted software"], isLeftPic: !true },
                     { icon: "game", bullets: ["Gamification", "Add promotional mini games", "to make your marketing astonish"], isLeftPic: true },
                 ] }),
             react_1.default.createElement(PicItem_1.PicItem, { iswhiteBg: true, picture: "assets/lowcode.png", description: react_1.default.createElement(react_1.default.Fragment, null,
