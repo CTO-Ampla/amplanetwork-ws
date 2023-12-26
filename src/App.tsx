@@ -97,7 +97,7 @@ const App = () => {
             items={[
               {icon: "chatbot"   , bullets: ["Virtual Assistant"]         , isLeftPic: !true},
               {icon: "smart"     , bullets: ["Smart Software"] , isLeftPic: true},
-              {icon: "bi"     , bullets: ["Data Analytics"] , isLeftPic: true},
+              {icon: "bi"     , bullets: ["Data Analytics"] , isLeftPic: !true},
             ]}
           />
         </>}

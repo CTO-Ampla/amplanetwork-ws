@@ -66,7 +66,7 @@ const App = () => {
                     react_1.default.createElement(BlockItem_1.BlockItem, { isWhiteBG: false, title: "AI assisted components", description: "Include AI assisted components to interact with your system", items: [
                             { icon: "chatbot", bullets: ["Virtual Assistant"], isLeftPic: !true },
                             { icon: "smart", bullets: ["Smart Software"], isLeftPic: true },
-                            { icon: "bi", bullets: ["Data Analytics"], isLeftPic: true },
+                            { icon: "bi", bullets: ["Data Analytics"], isLeftPic: !true },
                         ] })) }),
             react_1.default.createElement(PicItem_1.PicItem, { iswhiteBg: true, picture: "assets/gaming.png", description: react_1.default.createElement(react_1.default.Fragment, null,
                     react_1.default.createElement(BlockItem_1.BlockItem, { isWhiteBG: true, title: "Gamification", description: "Add promotional mini games to make your marketing astonish", items: [
