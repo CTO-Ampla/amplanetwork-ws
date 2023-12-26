@@ -5,7 +5,7 @@ import Flex from 'antd/lib/flex';
 import Row from 'antd/lib/row';
 import styled from "@mui/system/styled";
 
-type TLifeCycleItemPropsType = {
+export type TLifeCycleItemPropsType = {
  icon       : string;
  bullets    : string[];
  isLeftPic  : boolean;
@@ -40,7 +40,7 @@ export const LifeCycleItem = (props: TLifeCycleItemPropsType) => {
       <Row align={"stretch"} justify={"center"}>
         <Col xs={24} style={{ display: "flex" }}>
           <Flex justify="center" align="center" style={{ width: "100%" }}>
-            <img src={`assets/ico-${props.icon}.${props.ext ?? "png"}`} alt="" className="img-fluid" style={{ height: "40px", marginLeft: 10 }} />
+            <img src={`assets/ico-${props.icon}.${props.ext ?? "png"}`} alt="" className="img-fluid" style={{ height: "60px", marginLeft: 10 }} />
           </Flex>
         </Col>
         <Col xs={24}>

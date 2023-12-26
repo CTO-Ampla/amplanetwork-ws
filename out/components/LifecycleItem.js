@@ -49,7 +49,7 @@ const LifeCycleItem = (props) => {
             React.createElement(row_1.default, { align: "stretch", justify: "center" },
                 React.createElement(col_1.default, { xs: 24, style: { display: "flex" } },
                     React.createElement(flex_1.default, { justify: "center", align: "center", style: { width: "100%" } },
-                        React.createElement("img", { src: `assets/ico-${props.icon}.${(_b = props.ext) !== null && _b !== void 0 ? _b : "png"}`, alt: "", className: "img-fluid", style: { height: "40px", marginLeft: 10 } }))),
+                        React.createElement("img", { src: `assets/ico-${props.icon}.${(_b = props.ext) !== null && _b !== void 0 ? _b : "png"}`, alt: "", className: "img-fluid", style: { height: "60px", marginLeft: 10 } }))),
                 React.createElement(col_1.default, { xs: 24 },
                     React.createElement("ul", { style: { listStyleType: "none", textAlign: "center", paddingLeft: 15, paddingRight: 15 } }, props.bullets.map((bullet, index) => React.createElement("li", { key: index }, bullet)))))));
     const xs = (props.isLeftPic

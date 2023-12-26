@@ -12,9 +12,9 @@ const useResponsive_1 = require("ahooks/es/useResponsive");
 const Header_1 = require("./components/Header");
 const Intro_1 = require("./components/Intro");
 const Who_1 = require("./components/Who");
-const Lifecycle_1 = require("./components/Lifecycle");
 const Footer_1 = require("./components/Footer");
-const Coverage_1 = require("./components/Coverage");
+const BlockItem_1 = require("./components/BlockItem");
+const PicItem_1 = require("./components/PicItem");
 const Div = (0, styled_1.default)('div') ``;
 const App = () => {
     const responsive = (0, useResponsive_1.useResponsive)();
@@ -51,8 +51,29 @@ const App = () => {
             react_1.default.createElement(Header_1.Header, null),
             react_1.default.createElement(Intro_1.Intro, null),
             react_1.default.createElement(Who_1.Who, null),
-            react_1.default.createElement(Lifecycle_1.Lifecycle, null),
-            react_1.default.createElement(Coverage_1.Coverage, null),
+            react_1.default.createElement(BlockItem_1.BlockItem, { title: "Scope of expertise", description: "Our expertise is splitted into 3 main areas", items: [
+                    { icon: "code", bullets: ["Low code platform", "Our low code plateform handle full project lifecycle"], isLeftPic: true },
+                    { icon: "ai", bullets: ["AI assisted components", "From AI Asistant", "to AI Assisted software"], isLeftPic: !true },
+                    { icon: "game", bullets: ["Gamification", "Add promotional mini games", "to make your marketing astonish"], isLeftPic: true },
+                ] }),
+            react_1.default.createElement(PicItem_1.PicItem, { iswhiteBg: true, picture: "assets/lowcode.png", description: react_1.default.createElement(react_1.default.Fragment, null,
+                    react_1.default.createElement(BlockItem_1.BlockItem, { isWhiteBG: true, title: "Low code platform", description: "Low code plateform to handle full project", items: [
+                            { icon: "design", bullets: ["Conception"], isLeftPic: true },
+                            { icon: "implement", bullets: ["Implementation"], isLeftPic: !true },
+                            { icon: "testing", bullets: ["Testing"], isLeftPic: true },
+                        ] })) }),
+            react_1.default.createElement(PicItem_1.PicItem, { iswhiteBg: false, picture: "assets/ai-assist.png", isPicRight: true, description: react_1.default.createElement(react_1.default.Fragment, null,
+                    react_1.default.createElement(BlockItem_1.BlockItem, { isWhiteBG: false, title: "AI assisted components", description: "Include AI assisted components to interact with your system", items: [
+                            { icon: "chatbot", bullets: ["Virtual Assistant"], isLeftPic: !true },
+                            { icon: "smart", bullets: ["Smart Software"], isLeftPic: true },
+                            { icon: "bi", bullets: ["Data Analytics"], isLeftPic: true },
+                        ] })) }),
+            react_1.default.createElement(PicItem_1.PicItem, { iswhiteBg: true, picture: "assets/gaming.png", description: react_1.default.createElement(react_1.default.Fragment, null,
+                    react_1.default.createElement(BlockItem_1.BlockItem, { isWhiteBG: true, title: "Gamification", description: "Add promotional mini games to make your marketing astonish", items: [
+                            { icon: "promo", bullets: ["Promotional"], isLeftPic: true },
+                            { icon: "adv", bullets: ["Advertising"], isLeftPic: !true },
+                            { icon: "mini", bullets: ["Mini games"], isLeftPic: true },
+                        ] })) }),
             react_1.default.createElement(Footer_1.Footer, null))));
 };
 const root = (0, client_1.createRoot)(document.getElementById('app'));

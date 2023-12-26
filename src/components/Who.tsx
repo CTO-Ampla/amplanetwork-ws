@@ -98,6 +98,7 @@ export const Who = (props: TWhoPropsType) => {
       backgroundColor : "#fff",
       paddingTop      : "20px",
       paddingBottom   : "20px",
+      
     }}>
 
     {rs.md ? area1 : area2}
