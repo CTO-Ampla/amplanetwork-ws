@@ -64,7 +64,7 @@ const App = () => {
         title="Scope of expertise"
         description="Our expertise is splitted into 3 main areas"
         items={[
-          {icon: "code" , bullets: ["Low code platform", "Our low code plateform handle full project lifecycle"]    , isLeftPic: true},
+          {icon: "code" , bullets: ["Low code platform", "Our low code platform handle full project lifecycle"]    , isLeftPic: true},
           {icon: "ai"   , bullets: ["AI assisted components", "From AI Assistant","to AI Assisted software"]         , isLeftPic: !true},
           {icon: "game" , bullets: ["Gamification", "Add promotional mini games","to make your marketing astonishing."] , isLeftPic: true},
         ]}
