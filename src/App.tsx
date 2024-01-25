@@ -76,7 +76,7 @@ const App = () => {
           <BlockItem
             isWhiteBG={true}
             title="Low code platform"
-            description="Low code plateform to handle full project"
+            description="Low code platform to handle full project"
             items={[
               {icon: "design" , bullets: ["Conception"]    , isLeftPic: true},
               {icon: "implement"   , bullets: ["Implementation"]         , isLeftPic: !true},
